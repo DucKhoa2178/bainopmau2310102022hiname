@@ -30,9 +30,25 @@ hi('Mom', 'Dad')             | Hi Mom, and Dad!
 hi('A', 'B', 'C')            | Hi A, B, and C!
 hi('1', '22', '333', '4444') | Hi 1, 22, 333 and 4444!
 """
-#endregion debai
+#4 cai co ban dau
+def hi(name=None):
+  if name=='Mom':
+   return 'Hi '+name+'!'
+  if name==None:
+    return 'Hi!'
+  else:
+    return 'Hi!'
 
-#region bailam
-def hi(name):
-  return 'todo'
-#endregion bailam
+
+
+'''
+#3 cai kho cuoi
+def hi(*names):
+    if len(names) == 0  or names==None or names=='':
+        return 'Hi!'
+    elif len(names) == 1:
+        return 'Hi '+names[0]+'!'
+    else:
+        names_str = ', '.join(names[:-1])
+        return 'Hi '+names_str+', and '+ names[-1]+'!'
+'''
